@@ -91,7 +91,9 @@ export interface Question {
         body?: string;
     };
     tags: string[];
-    time: number;
+    time: {
+        posted: number
+    };
     author: string;
     conversations?:Conversation[]
 }
