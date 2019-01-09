@@ -57,8 +57,10 @@ export interface UserProtectedInformation {
 }
 
 export interface UserDefaultPrivacyInformation {
-    questions: number;
-    conversations: number;
+    questions: {
+        view: number,
+        edit: number
+    }
 }
 
 export interface Reply {
