@@ -74,7 +74,7 @@ export interface Reply {
 }
 
 export interface Conversation {
-    replies: Reply[];
+    replies?: Reply[];
     members: Map<string, {view: number, edit: number}>; //map from member id to their desired privacy choice
     numMembers: number;
     privacy: {
